@@ -12,7 +12,7 @@ router.post("/createcontact",createContact);
 app.use("/api",router);
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/nodejsproject");
+        await mongoose.connect("mongodb+srv://umair:umair@cluster0.vpd8g8y.mongodb.net/yusra");
         console.log("MongoDB connected successfully");
     } catch (error) {
         console.log("MongoDB connection failed:", error.message);
